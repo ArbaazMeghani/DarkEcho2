@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07ebe84fe7122f49a21d887bbca44d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
-  waveDistance: 50
+  speed: 100
+  waveDistance: 100
   projectionAdditiveShader: {fileID: 4800000, guid: d9bffdc6c0d217d4a9ce287472fe68c7,
     type: 3}
 --- !u!119 &119867049506666698
