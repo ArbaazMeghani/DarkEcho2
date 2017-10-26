@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject cameraRig;
 	public GameObject waveProjector;
 	public float stepInterval = 0.5f;
+	public AudioSource footStep;
 
 	private float nextStep;
 	private bool isMoving;
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void CreateWave() {
-		//TODO::play step audio.
+		footStep.Play ();
 		Instantiate (waveProjector, 
 			new Vector3 (cameraRig.transform.position.x, 8.0f, cameraRig.transform.position.z), 
 			waveProjector.transform.rotation);
