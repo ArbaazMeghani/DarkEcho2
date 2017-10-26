@@ -7,7 +7,7 @@ public class ThrowableObject : MonoBehaviour {
 	public bool isObjectThrown;
 	public GameObject waveProjector;
 	public float waveDistanceMultiplier = 1.0f;
-	public float initialVelocity = 1.0f;
+	public Vector3 initialVelocity = new Vector3(1,0,0);
 
 	private Rigidbody throwableObjectRigidBody;
 
@@ -23,7 +23,7 @@ public class ThrowableObject : MonoBehaviour {
 		GameObject waveProjectorInstance = Instantiate (waveProjector, 
 			new Vector3(gameObject.transform.position.x, 8, gameObject.transform.position.z),
 			waveProjector.transform.rotation);
-		waveProjectorInstance.GetComponent<ProjectorMovement> ().waveDistance = initialVelocity * waveDistanceMultiplier;
+		waveProjectorInstance.GetComponent<ProjectorMovement> ().waveDistance = initialVelocity.magnitude * waveDistanceMultiplier;
 
 		if (throwableObjectRigidBody.velocity == Vector3.zero)
 			isObjectThrown = false;

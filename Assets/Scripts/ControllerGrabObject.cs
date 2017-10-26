@@ -83,6 +83,8 @@ public class ControllerGrabObject : MonoBehaviour {
 			// 3
 			objectInHand.GetComponent<Rigidbody>().velocity = Controller.velocity;
 			objectInHand.GetComponent<Rigidbody>().angularVelocity = Controller.angularVelocity;
+			objectInHand.GetComponent<ThrowableObject> ().initialVelocity = Controller.velocity;
+			objectInHand.GetComponent<ThrowableObject> ().isObjectThrown = true;
 		}
 		// 4
 		objectInHand = null;
