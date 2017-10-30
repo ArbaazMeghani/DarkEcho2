@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+		[SerializeField] GameObject scannerObject;
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -174,7 +175,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // move picked sound to index 0 so it's not picked next time
             m_FootstepSounds[n] = m_FootstepSounds[0];
             m_FootstepSounds[0] = m_AudioSource.clip;
+
+			CreateWave ();
         }
+
+		private void CreateWave() {
+			Instantiate (scannerObject,
+				new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z),
+				scannerObject.transform.rotation);
+		}
 
 
         private void UpdateCameraPosition(float speed)
