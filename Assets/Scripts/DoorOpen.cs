@@ -6,6 +6,11 @@ public class DoorOpen : MonoBehaviour {
 
 	private bool isOpen = false;
 
+	void Start() {
+		if (gameObject.transform.rotation.y != 0)
+			isOpen = true;
+	}
+
 	void OnTriggerEnter(Collider other) {
 		if (!other.CompareTag ("Player"))
 			return;
@@ -24,7 +29,7 @@ public class DoorOpen : MonoBehaviour {
 	}
 
 	IEnumerator OpenDoor() {
-		while (gameObject.transform.rotation.y < 0.8f) {
+		while (gameObject.transform.rotation.y < 0.75f) {
 			gameObject.transform.Rotate (new Vector3 (0.0f, 1.5f, 0.0f));
 			yield return new WaitForSeconds (0.001f);
 		}
