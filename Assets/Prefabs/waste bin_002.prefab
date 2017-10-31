@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 23623936582674158}
   - component: {fileID: 95191433980097246}
   - component: {fileID: 65883766725226448}
+  - component: {fileID: 54456747688824334}
+  - component: {fileID: 114889530175630624}
   m_Layer: 0
   m_Name: waste bin_002
   m_TagString: Untagged
@@ -82,6 +84,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1742595696926720}
   m_Mesh: {fileID: 4300000, guid: cbe901c534fac324b9a0e1c87356397a, type: 3}
+--- !u!54 &54456747688824334
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1742595696926720}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65883766725226448
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -111,3 +128,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114889530175630624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1742595696926720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc26312ad974b54ab268a1d94478e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isObjectThrown: 0
+  waveProjector: {fileID: 1539950971277616, guid: 51e6a15375dd7c348a55644f9ab20f82,
+    type: 2}
+  waveDistanceMultiplier: 50
+  initialVelocity: {x: 1, y: 0, z: 0}
