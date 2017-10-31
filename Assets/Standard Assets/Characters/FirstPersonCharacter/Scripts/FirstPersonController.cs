@@ -181,7 +181,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 		private void CreateWave() {
 			Instantiate (scannerObject,
-				new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z),
+				new Vector3 (gameObject.transform.position.x + transform.forward.x, 8.0f, gameObject.transform.position.z + transform.forward.z),
 				scannerObject.transform.rotation);
 		}
 

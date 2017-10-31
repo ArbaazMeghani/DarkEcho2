@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	public float movementSpeed = 5.0f;
-	public GameObject cameraRig;
+	public Rigidbody movement;
+	public Transform waveLocation;
+	public Transform cameraDirection;
 	public GameObject waveProjector;
 	public float stepInterval = 0.5f;
 	public AudioSource footStep;
@@ -29,17 +31,19 @@ public class PlayerController : MonoBehaviour {
 			isMoving = true;
 		else
 			isMoving = false;
-
-		cameraRig.transform.Translate (horizontalMovement, 0.0f, verticalMovement);
+		movement.transform.forward = cameraDirection.forward;
+		movement.MovePosition (new Vector3 (horizontalMovement, 0.0f, verticalMovement));
 
 		if (nextStep < Time.time && isMoving)
 			CreateWave ();
 	}
 
 	void CreateWave() {
-		footStep.Play ();
+		if(!footStep.isPlaying)
+			footStep.Play ();
+		
 		Instantiate (waveProjector, 
-			new Vector3 (cameraRig.transform.position.x, 8.0f, cameraRig.transform.position.z), 
+			new Vector3 (waveLocation.position.x, 8.0f, waveLocation.position.z), 
 			waveProjector.transform.rotation);
 
 		nextStep = Time.time + stepInterval;

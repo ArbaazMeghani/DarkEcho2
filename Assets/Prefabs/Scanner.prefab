@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07ebe84fe7122f49a21d887bbca44d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 40
   waveDistance: 50
 --- !u!119 &119173259624913038
 Projector:

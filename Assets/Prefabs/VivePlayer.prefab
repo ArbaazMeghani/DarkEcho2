@@ -90,9 +90,9 @@ GameObject:
   - component: {fileID: 4097137444224604}
   - component: {fileID: 114084515943770338}
   - component: {fileID: 54881184003304828}
-  - component: {fileID: 114891308251069472}
   - component: {fileID: 114725486283297860}
   - component: {fileID: 65151980564838580}
+  - component: {fileID: 114490769352799298}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -145,9 +145,9 @@ GameObject:
   - component: {fileID: 4310031840861154}
   - component: {fileID: 114758209017498712}
   - component: {fileID: 54018959929255440}
-  - component: {fileID: 114196177702706812}
   - component: {fileID: 114735827113830812}
   - component: {fileID: 65095956907511312}
+  - component: {fileID: 114541370822667572}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -524,7 +524,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -615,23 +615,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
---- !u!114 &114196177702706812
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1560857793773528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d68856bb4198524c99537bdfd65abcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 10
-  cameraRig: {fileID: 1502572673404234}
-  waveProjector: {fileID: 1096947704871868, guid: 51e6a15375dd7c348a55644f9ab20f82,
-    type: 2}
-  stepInterval: 0.5
-  footStep: {fileID: 82251367599242500}
 --- !u!114 &114201354754113052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -674,6 +657,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vrcam: {fileID: 0}
+--- !u!114 &114490769352799298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321352954939526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d68856bb4198524c99537bdfd65abcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  movement: {fileID: 54320683241826590}
+  waveLocation: {fileID: 4925415235610674}
+  cameraDirection: {fileID: 4955686960129400}
+  waveProjector: {fileID: 1539950971277616, guid: 51e6a15375dd7c348a55644f9ab20f82,
+    type: 2}
+  stepInterval: 0.5
+  footStep: {fileID: 82251367599242500}
+--- !u!114 &114541370822667572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1560857793773528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d68856bb4198524c99537bdfd65abcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  movement: {fileID: 54320683241826590}
+  waveLocation: {fileID: 4925415235610674}
+  cameraDirection: {fileID: 4955686960129400}
+  waveProjector: {fileID: 1539950971277616, guid: 51e6a15375dd7c348a55644f9ab20f82,
+    type: 2}
+  stepInterval: 0.5
+  footStep: {fileID: 82251367599242500}
 --- !u!114 &114592487560721794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -782,23 +803,6 @@ MonoBehaviour:
   - {x: -1.65, y: 0.01, z: -1.275}
   - {x: -1.65, y: 0.01, z: 1.275}
   - {x: 1.65, y: 0.01, z: 1.275}
---- !u!114 &114891308251069472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1321352954939526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d68856bb4198524c99537bdfd65abcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 10
-  cameraRig: {fileID: 1502572673404234}
-  waveProjector: {fileID: 1096947704871868, guid: 51e6a15375dd7c348a55644f9ab20f82,
-    type: 2}
-  stepInterval: 0.5
-  footStep: {fileID: 82251367599242500}
 --- !u!114 &114892927596089544
 MonoBehaviour:
   m_ObjectHideFlags: 1
