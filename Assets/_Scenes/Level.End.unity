@@ -11370,7 +11370,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Name
@@ -14940,7 +14940,7 @@ Transform:
   - {fileID: 1389092767}
   - {fileID: 651942874}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1601349057
 Prefab:
@@ -20286,48 +20286,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4802913104351204, guid: 478389f876a4cfb4a99ac189082a3df7,
     type: 2}
   m_PrefabInternal: {fileID: 2110284573}
---- !u!1001 &2112754724
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -14.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 6.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -7.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7069834
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7072302
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696667842075130, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c7bfeed2b56734d4591da6d125e8b3d6, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &2119607435
 Prefab:
   m_ObjectHideFlags: 0
