@@ -48,4 +48,9 @@ public class PlayerController : MonoBehaviour {
 
 		nextStep = Time.time + stepInterval;
 	}
+
+	void OnCollisionEnter(Collision other) {
+		if (other.gameObject.CompareTag ("Wall"))
+			CreateWave ();
+	}
 }

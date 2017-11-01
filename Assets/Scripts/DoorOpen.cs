@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DoorOpen : MonoBehaviour {
 
+	public GameObject waveProjector;
+
 	private bool isOpen = false;
 
 	void Start() {
@@ -30,6 +32,9 @@ public class DoorOpen : MonoBehaviour {
 
 	IEnumerator OpenDoor() {
 		while (gameObject.transform.rotation.y < 0.75f) {
+			Instantiate (waveProjector, 
+				new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
+				waveProjector.transform.rotation);
 			gameObject.transform.Rotate (new Vector3 (0.0f, 1.5f, 0.0f));
 			yield return new WaitForSeconds (0.001f);
 		}
@@ -37,6 +42,9 @@ public class DoorOpen : MonoBehaviour {
 
 	IEnumerator CloseDoor() {
 		while (gameObject.transform.rotation.y > 0.0f) {
+			Instantiate (waveProjector, 
+				new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
+				waveProjector.transform.rotation);
 			gameObject.transform.Rotate (new Vector3 (0.0f, -1.5f, 0.0f));
 			yield return new WaitForSeconds (0.001f);
 		}

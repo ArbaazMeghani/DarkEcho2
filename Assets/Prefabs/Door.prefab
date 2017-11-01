@@ -165,3 +165,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f75870cbab5749468a61a5fce9c183b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveProjector: {fileID: 1539950971277616, guid: 51e6a15375dd7c348a55644f9ab20f82,
+    type: 2}
