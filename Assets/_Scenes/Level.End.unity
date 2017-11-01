@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0
+  m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 1
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -107,7 +107,7 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 8b1dca49660b94746a281d4511f71f57, type: 2}
 --- !u!1 &1973187
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +395,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -3853,7 +3857,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &102107293
 BoxCollider:
@@ -5360,7 +5364,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &139259395
 BoxCollider:
@@ -6906,6 +6910,10 @@ Prefab:
       propertyPath: m_Name
       value: Tile_Floor (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -7590,6 +7598,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -8381,6 +8393,10 @@ Prefab:
       propertyPath: m_Name
       value: Tile_Floor (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -8451,6 +8467,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -9945,7 +9965,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &237245470
 BoxCollider:
@@ -15728,6 +15748,10 @@ Prefab:
       propertyPath: m_Name
       value: Tile_Floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -16310,6 +16334,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -16853,6 +16881,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -19233,6 +19265,10 @@ Prefab:
       propertyPath: m_Name
       value: Tile_Floor (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -21159,6 +21195,10 @@ Prefab:
     - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_Name
       value: Tile_Floor (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -27222,6 +27262,10 @@ Prefab:
       propertyPath: m_Name
       value: Carpet_Floor (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
@@ -27758,7 +27802,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &620628289
 BoxCollider:
@@ -28000,6 +28044,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -28778,6 +28826,10 @@ Prefab:
       propertyPath: m_Name
       value: Carpet_Floor (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
@@ -29144,6 +29196,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -30079,7 +30135,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &675045568
 BoxCollider:
@@ -31648,6 +31704,10 @@ Prefab:
       propertyPath: m_Name
       value: Tile_Floor (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -32518,6 +32578,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -33817,6 +33881,10 @@ Prefab:
     - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_Name
       value: Tile_Floor (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -37483,6 +37551,10 @@ Prefab:
       propertyPath: m_Name
       value: Carpet_Floor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
@@ -40595,6 +40667,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -41063,7 +41139,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &909885669
 BoxCollider:
@@ -41356,6 +41432,10 @@ Prefab:
       propertyPath: m_Name
       value: Carpet_Floor (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
@@ -41390,7 +41470,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &914781531
 BoxCollider:
@@ -42732,6 +42812,10 @@ Prefab:
     - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_Name
       value: Tile_Floor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -45862,7 +45946,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &997154336
 BoxCollider:
@@ -46059,6 +46143,10 @@ Prefab:
     - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_Name
       value: Tile_Floor (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -46483,6 +46571,10 @@ Prefab:
     - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_Name
       value: Tile_Floor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -50170,6 +50262,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -52407,7 +52503,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1138790952
 BoxCollider:
@@ -52970,6 +53066,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -54125,7 +54225,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1179194277
 BoxCollider:
@@ -55006,6 +55106,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -57366,6 +57470,10 @@ Prefab:
       propertyPath: m_Name
       value: Tile_Floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -57914,7 +58022,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1286263260
 BoxCollider:
@@ -58032,6 +58140,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -58892,6 +59004,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -60202,7 +60318,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1333410913
 BoxCollider:
@@ -61700,6 +61816,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -63286,6 +63406,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -64233,6 +64357,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
@@ -64655,7 +64783,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1442708094
 BoxCollider:
@@ -64834,6 +64962,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -66242,6 +66374,10 @@ Prefab:
       propertyPath: m_Name
       value: Carpet_Floor (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
@@ -67273,7 +67409,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1499993312
 BoxCollider:
@@ -67513,6 +67649,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -68280,6 +68420,10 @@ Prefab:
     - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_Name
       value: Tile_Floor (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -69058,6 +69202,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -73740,6 +73888,10 @@ Prefab:
       propertyPath: m_Name
       value: Carpet_Floor (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
@@ -75968,6 +76120,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -80263,6 +80419,10 @@ Prefab:
     - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
       propertyPath: m_Name
       value: Carpet_Floor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559367011463504, guid: 606e5e02622a9814497238596a6835be, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -84850,7 +85010,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1863103879
 BoxCollider:
@@ -87335,6 +87495,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -88005,7 +88169,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1937205835
 BoxCollider:
@@ -88719,6 +88883,10 @@ Prefab:
     - target: {fileID: 4888484870358206, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_LocalScale.z
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
@@ -92708,6 +92876,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
   m_IsPrefabParent: 0
@@ -94805,6 +94977,10 @@ Prefab:
     - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
       propertyPath: m_Name
       value: Tile_Floor (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077299218001380, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aae8c801f37a86b469f38eeab1da5de1, type: 2}
