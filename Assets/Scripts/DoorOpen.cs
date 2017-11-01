@@ -32,22 +32,24 @@ public class DoorOpen : MonoBehaviour {
 
 	IEnumerator OpenDoor() {
 		while (gameObject.transform.rotation.y < 0.75f) {
-			Instantiate (waveProjector, 
-				new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
-				waveProjector.transform.rotation);
 			gameObject.transform.Rotate (new Vector3 (0.0f, 1.5f, 0.0f));
+			CreateWave ();
 			yield return new WaitForSeconds (0.001f);
 		}
 	}
 
 	IEnumerator CloseDoor() {
 		while (gameObject.transform.rotation.y > 0.0f) {
-			Instantiate (waveProjector, 
-				new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
-				waveProjector.transform.rotation);
 			gameObject.transform.Rotate (new Vector3 (0.0f, -1.5f, 0.0f));
+			CreateWave ();
 			yield return new WaitForSeconds (0.001f);
 		}
+	}
+
+	void CreateWave() {
+		Instantiate (waveProjector, 
+			new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
+			waveProjector.transform.rotation);
 	}
 
 

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114363442037180114}
   - component: {fileID: 54629738210943074}
   - component: {fileID: 82181477126969182}
+  - component: {fileID: 65351874195703200}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Player
@@ -126,6 +127,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65351874195703200
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565050613080482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &81222955531474970
 AudioListener:
   m_ObjectHideFlags: 1

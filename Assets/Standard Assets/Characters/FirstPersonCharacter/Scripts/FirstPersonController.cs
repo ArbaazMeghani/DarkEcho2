@@ -185,6 +185,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 				scannerObject.transform.rotation);
 		}
 
+		void OnCollisionEnter(Collision other) {
+			if (other.gameObject.CompareTag ("Wall"))
+				CreateWave ();
+		}
+
 
         private void UpdateCameraPosition(float speed)
         {
