@@ -15,11 +15,13 @@ public class PlayerController : MonoBehaviour {
 	private float nextStep;
 	private bool isMoving;
 	private MainMonsterMovement mainMonster;
+    private Secondary_Monster secondaryMonster;
 
 	void Start() {
 		nextStep = 0.0f;
 		isMoving = false;
 		mainMonster = FindObjectOfType<MainMonsterMovement> ();
+        secondaryMonster = FindObjectOfType<Secondary_Monster>();
 	}
 
 	void FixedUpdate () {
@@ -49,6 +51,7 @@ public class PlayerController : MonoBehaviour {
 			waveProjector.transform.rotation);
 
 		mainMonster.soundCreated (wave);
+        secondaryMonster.soundCreated(wave);
 
 		nextStep = Time.time + stepInterval;
 	}
