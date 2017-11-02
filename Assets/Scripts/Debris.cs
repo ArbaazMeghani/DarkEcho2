@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap : MonoBehaviour {
-
-	public GameObject debris;
-	public Transform debrisSpawnLocation;
-
+public class Debris : MonoBehaviour {
+	
 	void OnTriggerEnter(Collider other) {
 		if (other.CompareTag ("Player"))
-			Instantiate (debris, debrisSpawnLocation);
+			FindObjectOfType<GameManager> ().Die ();
 	}
 }
