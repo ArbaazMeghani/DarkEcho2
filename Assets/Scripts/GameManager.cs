@@ -27,8 +27,16 @@ public class GameManager : MonoBehaviour {
 		return gotKey;
 	}
 
+    //Monster or Obstacle or Trap Death Code
 	public void Die() {
         //Death Code, the scene is reloaded.
 		SceneManager.LoadScene ("Level.End");
 	}
+
+    //If the light switch button is touched, the game ends and the player wins
+    //we will model a more impressive button eventually
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 }

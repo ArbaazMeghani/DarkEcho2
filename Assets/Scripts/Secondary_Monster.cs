@@ -7,11 +7,12 @@ using UnityEngine;
 *   Other Team: Arbaaz Meghani, Yao Chen, Giovanni Valencia
 *   Description: This is a simple AI implementation. As the only graduate student in the class I have ill defined limitations
 *   that confused me. Unfortunately by the time I actually had time to work on this assignment wednesday, I was so stressed
-*   tired, and demoralized, that my attempts to use an advanced path finding technique simply failed. Instead, I created 
+*   tired, and demoralized, that my attempts to use an advanced path finding technique simply failed and I was not able to ask
+*   coherent questions to the TA via email. Instead, I created 
 *   a much more simpler AI than I previously wanted that doesn't use the advanced pathfinding techniques.
 *
 *
-*   Description of AI Behavior: This Monster "randomly" chooses a direction then moves a small randomized distance. If the 
+*   Description of AI Behavior: This Monster "randomly" chooses a direction then moves a small randomized distance over 5 seconds. If the 
 *   Monster detects a nearby sound, it will respond to it and move towards that sound instead. This Monster also moves slower
 *   than the other Monster and acts more as an obstacle rather than an instant active threat since the other monster moves rather
 *   quickly.
