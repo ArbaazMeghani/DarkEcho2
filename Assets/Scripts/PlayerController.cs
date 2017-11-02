@@ -35,8 +35,7 @@ public class PlayerController : MonoBehaviour {
 			isMoving = true;
 		else
 			isMoving = false;
-		movement.transform.forward = cameraDirection.forward;
-		movement.MovePosition (new Vector3 (horizontalMovement, 0.0f, verticalMovement));
+		cameraDirection.Translate (new Vector3 (horizontalMovement, 0.0f, verticalMovement));
 
 		if (nextStep < Time.time && isMoving)
 			CreateWave ();
