@@ -35,7 +35,7 @@ public class MainMonsterMovement : MonoBehaviour {
 	}
 
 	void CreateWave() {
-		GameObject wave = Instantiate (waveProjector, 
+		Instantiate (waveProjector, 
 			new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
 			waveProjector.transform.rotation);
 

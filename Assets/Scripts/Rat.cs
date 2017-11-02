@@ -19,7 +19,7 @@ public class Rat : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        timer += Time.deltatime;
+		timer += Time.deltaTime;
 
         transform.position += Vector3.forward * Time.deltaTime;
 
@@ -28,7 +28,7 @@ public class Rat : MonoBehaviour
 
             //currently goes in circles, rotates every 5 seconds
             //Randomness wasnt working properly so i removed it and going to start from scratch
-            transform.rotate(0, 90, 0);
+            transform.Rotate(0, 90, 0);
 
         }
     }
