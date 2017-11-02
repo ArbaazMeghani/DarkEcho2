@@ -24,7 +24,7 @@ public class ThrowableObject : MonoBehaviour {
 			new Vector3(gameObject.transform.position.x, 8, gameObject.transform.position.z),
 			waveProjector.transform.rotation);
 		waveProjectorInstance.GetComponent<ScannerMovement> ().waveDistance = initialVelocity.magnitude * waveDistanceMultiplier;
-
+		FindObjectOfType<MainMonsterMovement> ().soundCreated (waveProjectorInstance);
 		if (throwableObjectRigidBody.velocity == Vector3.zero)
 			isObjectThrown = false;
 	}

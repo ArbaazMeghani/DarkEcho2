@@ -14,10 +14,12 @@ public class PlayerController : MonoBehaviour {
 
 	private float nextStep;
 	private bool isMoving;
+	private MainMonsterMovement mainMonster;
 
 	void Start() {
 		nextStep = 0.0f;
 		isMoving = false;
+		mainMonster = FindObjectOfType<MainMonsterMovement> ();
 	}
 
 	void FixedUpdate () {
@@ -42,9 +44,11 @@ public class PlayerController : MonoBehaviour {
 		if(!footStep.isPlaying)
 			footStep.Play ();
 		
-		Instantiate (waveProjector, 
+		GameObject wave = Instantiate (waveProjector, 
 			new Vector3 (waveLocation.position.x, 8.0f, waveLocation.position.z), 
 			waveProjector.transform.rotation);
+
+		mainMonster.soundCreated (wave);
 
 		nextStep = Time.time + stepInterval;
 	}

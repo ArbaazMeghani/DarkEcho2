@@ -7,10 +7,13 @@ public class DoorOpen : MonoBehaviour {
 	public GameObject waveProjector;
 
 	private bool isOpen = false;
+	private MainMonsterMovement mainMonster;
 
 	void Start() {
 		if (gameObject.transform.rotation.y != 0)
 			isOpen = true;
+
+		mainMonster = FindObjectOfType<MainMonsterMovement> ();
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -48,9 +51,10 @@ public class DoorOpen : MonoBehaviour {
 	}
 
 	void CreateWave() {
-		Instantiate (waveProjector, 
+		GameObject waveProjectorInstance = Instantiate (waveProjector, 
 			new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
 			waveProjector.transform.rotation);
+		mainMonster.soundCreated (waveProjectorInstance);
 	}
 
 
