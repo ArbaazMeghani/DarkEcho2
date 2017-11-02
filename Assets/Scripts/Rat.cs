@@ -18,14 +18,16 @@ public class Rat : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        speed = 10.0f;
+        speed = 3.0f;
     }
 
     void CreateWave()
     {
-        Instantiate(waveProjector,
+        GameObject wave = Instantiate(waveProjector,
             new Vector3(gameObject.transform.position.x, 8.0f, gameObject.transform.position.z),
             waveProjector.transform.rotation);
+
+		wave.GetComponent<ScannerMovement> ().waveDistance = 20;
 
         nextStep = Time.time + stepInterval;
     }
@@ -45,6 +47,10 @@ public class Rat : MonoBehaviour
 
         }
         transform.position += transform.forward * Time.deltaTime * speed;
-        CreateWave();
+
+		if (nextStep < Time.time) {
+			CreateWave ();
+			nextStep = Time.time + stepInterval;
+		}
     }
 }
