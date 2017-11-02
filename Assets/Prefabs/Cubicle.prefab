@@ -210,6 +210,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4857462988098988}
+  - component: {fileID: 208957235045304960}
   m_Layer: 0
   m_Name: Cubicle
   m_TagString: Untagged
@@ -885,3 +886,18 @@ MonoBehaviour:
     type: 2}
   waveDistanceMultiplier: 50
   initialVelocity: {x: 1, y: 0, z: 0}
+--- !u!208 &208957235045304960
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1865183298479436}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 0.1, z: 0.05}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.02, y: 0, z: 0}
+  m_TimeToStationary: 0.5
