@@ -48,9 +48,9 @@ public class Secondary_Monster : MonoBehaviour {
 	void Update () {
 
         timer += Time.deltaTime;
-        //choose random direction, move, create sound waves
-        //create conditional to check if the player is detected and is being touched by sound waves
 
+        //Every 5 seconds the monster chooses a new direction to wander in by random, that is IF the direction was not
+        //set to be towards the player if the monster detects the player's sound waves.
         if (timer % 5 == 0 && directFlag == 0)
         {
             wander();
@@ -100,14 +100,16 @@ public class Secondary_Monster : MonoBehaviour {
 
         xAxis = Random.Range(-1f, 1f);
         zAxis = Random.Range(-1f, 1f);
-        direction = new Vector3(xAxis, 60, zAxis);
+        direction = new Vector3(xAxis, 6.02f, zAxis);
     }
 
     //Moves the monster towards the chosen direction.
     public void stalk()
     {
-        this.transform.Rotate(direction);
-        this.transform.position = Vector3.MoveTowards(transform.position, direction, stalkSpeed * Time.deltaTime);
+        //The Monster stalks towards the direction vector
+        transform.Rotate(direction);
+        // transform.position = Vector3.MoveTowards(transform.position, direction, stalkSpeed * Time.deltaTime);
+        transform.position += transform.forward * Time.deltaTime * stalkSpeed;
     }
 
 
