@@ -41,10 +41,10 @@ public class Rat : MonoBehaviour
         if (timer % 1f < 0.1)
         {
 
-            transform.Rotate(0, 0, Random.Range(20, 165));
+            transform.Rotate(0, Random.Range(20, 165), 0);
 
         }
-        transform.position += Vector3.forward * Time.deltaTime * speed;
+        transform.position += transform.forward * Time.deltaTime * speed;
         CreateWave();
     }
 }
