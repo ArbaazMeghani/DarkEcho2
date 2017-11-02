@@ -24550,7 +24550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5854763ae1ee427428cf98f7723eeea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveDistanceMultiplier: 0.5
+  waveDistanceMultiplier: 0.75
   waypoints:
   - {fileID: 650840385}
   - {fileID: 70249244}

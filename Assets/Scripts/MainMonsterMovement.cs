@@ -48,10 +48,8 @@ public class MainMonsterMovement : MonoBehaviour {
 			monsterFSM.SetFloat ("WaypointDistance", distanceToSound);
 			currentWaypoint = soundWave.transform.position;
 			monsterNavigationMesh.SetDestination (currentWaypoint);
+			Debug.Log ("New Destination Set");
 		}
-
-		Debug.Log (distanceToSound.ToString ());
-		Debug.Log ((waveDistanceMultiplier * soundWave.GetComponent<ScannerMovement> ().waveDistance).ToString ());
 	}
 
 	public void SelectWaypoint() {
