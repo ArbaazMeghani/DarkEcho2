@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Debris
+  - Monster
   layers:
   - Default
   - TransparentFX
