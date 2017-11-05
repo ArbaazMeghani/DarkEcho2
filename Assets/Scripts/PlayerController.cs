@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour {
 			waveProjector.transform.rotation);
 
 		mainMonster.soundCreated (wave);
-        secondaryMonster.soundCreated(wave);
+ //       secondaryMonster.soundCreated(wave);
 
 		nextStep = Time.time + stepInterval;
 	}
