@@ -22,8 +22,10 @@ public class BigGate : MonoBehaviour {
 	}
 
 	private void OnTriggerExit(Collider other) {
-		if (other.gameObject.CompareTag ("Player"))
-			animationController.SetBool ("GateOpen", false);
-        AudioClips[1].Play();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            animationController.SetBool("GateOpen", false);
+            AudioClips[1].Play();
+        }
     }
 }
