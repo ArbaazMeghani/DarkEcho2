@@ -36,6 +36,7 @@ public class Trap : MonoBehaviour {
                 // other.attachedRigidbody.isKinematic = false;
 
                 Instantiate(moreDebris, debrisSpawnLocation);
+               // moreDebris.GetComponent<Rigidbody>().angularVelocity = transform.rotation * ((20 * 30 * Mathf.Deg2Rad) / Time.deltaTime);
                 Instantiate(blackDebris, debrisSpawnLocation);
                 Instantiate(redDebris, debrisSpawnLocation);
                 Instantiate(cinderDebris, debrisSpawnLocation);
