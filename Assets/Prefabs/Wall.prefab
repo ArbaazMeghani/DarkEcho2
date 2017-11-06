@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23693463161948960}
   - component: {fileID: 114552481998791696}
   - component: {fileID: 65868492016261786}
+  - component: {fileID: 95633528784519298}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -38,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634885972998404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.39, y: 7.2242, z: -7.3900003}
-  m_LocalScale: {x: 0.5, y: 2.5, z: 5}
+  m_LocalPosition: {x: 480, y: 129.6598, z: -73.9}
+  m_LocalScale: {x: 5, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -105,8 +106,25 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 1, z: 1}
+  m_Size: {x: 10, y: 3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95633528784519298
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634885972998404}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89dde1ecf734222499e218230959e743, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114552481998791696
 MonoBehaviour:
   m_ObjectHideFlags: 1
