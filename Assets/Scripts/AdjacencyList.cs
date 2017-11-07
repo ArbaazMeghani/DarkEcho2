@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TheoryOfProgramming
 {
-    class AdjacencyList
+    /*class AdjacencyList
     {
         LinkedList<System.valueTuple<int, String>>[] adjacencyList;
 
@@ -107,5 +107,5 @@ namespace TheoryOfProgramming
             adjacencyList.removeEdge(1, 2, "1");
             adjacencyList.printAdjacencyList();
         }
-    }
+    }*/
 }
