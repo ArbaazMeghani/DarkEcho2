@@ -20,6 +20,9 @@ public class ScientistAI : MonoBehaviour {
 	}
 
 	void Update() {
+		if (Input.GetButton ("Fire1"))
+			KillScientist ();
+
 		if (!animationController.enabled) {
 			navMesh.enabled = false;
 			return;
@@ -32,8 +35,12 @@ public class ScientistAI : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.CompareTag ("Monster")) {
 			Debug.Log ("COLLISION");
-			animationController.enabled = false;
+			KillScientist ();
 		}
+	}
+
+	void KillScientist() {
+		animationController.enabled = false;
 	}
 
 	void SetDestination() {
