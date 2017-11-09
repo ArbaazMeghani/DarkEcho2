@@ -6,16 +6,20 @@ using UnityEngine.AI;
 public class ScientistAI : MonoBehaviour {
 
 	public Transform[] waypoints;
+	public float stepInterval = 0.5f;
+	public GameObject waveProjector;
 
 	private Animator animationController;
 	private NavMeshAgent navMesh;
 	private float distanceToWaypoint;
 	private int waypointIndex;
+	private float nextStep;
 
 	void Start () {
 		animationController = gameObject.GetComponent<Animator> ();
 		navMesh = gameObject.GetComponent<NavMeshAgent> ();
 		waypointIndex = 0;
+		nextStep = 0.0f;
 		SetDestination ();
 	}
 
@@ -30,6 +34,18 @@ public class ScientistAI : MonoBehaviour {
 		CalculateDistance ();
 		if (distanceToWaypoint <= 1.0f)
 			SetDestination ();
+
+		if (nextStep < Time.time)
+			CreateWave ();
+	}
+
+	void CreateWave() {
+
+		GameObject wave = Instantiate (waveProjector, 
+			new Vector3 (gameObject.transform.position.x, 8.0f, gameObject.transform.position.z), 
+			waveProjector.transform.rotation);
+
+		nextStep = Time.time + stepInterval;
 	}
 
 	void OnTriggerEnter(Collider other) {
