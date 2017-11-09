@@ -55,19 +55,19 @@ public class Win : MonoBehaviour {
                 Instantiate(cinderDebris, debrisSpawnWin4);
                 Debug.Log("Final Room Debris Falling");
 
-                light1.SetActive(true);
+				light1.GetComponent<Light> ().enabled = true;
             }
             if (timer % 2 < 0.01f)
             {
-                light2.SetActive(true);
+				light2.GetComponent<Light> ().enabled = true;
             }
             if (timer % 3 < 0.01f)
             {
-                light3.SetActive(true);
+				light3.GetComponent<Light> ().enabled = true;
             }
             if (timer % 4 < 0.01f)
             {
-                light4.SetActive(true);
+				light4.GetComponent<Light> ().enabled = true;
             }
 
             if (timer > 5.1f)
