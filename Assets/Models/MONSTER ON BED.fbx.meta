@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 1a6230f52f570434c868424ba6e71db2
+timeCreated: 1510200998
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: arm_L
+    100002: arm_R
+    100004: body
+    100006: joint10
+    100008: joint10 1
+    100010: joint13
+    100012: joint13 1
+    100014: joint14
+    100016: joint14 1
+    100018: joint15
+    100020: joint15 1
+    100022: joint16
+    100024: joint16 1
+    100026: joint17
+    100028: joint17 1
+    100030: joint18
+    100032: joint18 1
+    100034: joint19
+    100036: joint19 1
+    100038: joint2
+    100040: joint20
+    100042: joint20 1
+    100044: joint21
+    100046: joint21 1
+    100048: joint22
+    100050: joint22 1
+    100052: joint23
+    100054: joint23 1
+    100056: joint24
+    100058: joint24 1
+    100060: joint25
+    100062: joint25 1
+    100064: joint26
+    100066: joint26 1
+    100068: joint27
+    100070: joint27 1
+    100072: joint28
+    100074: joint28 1
+    100076: joint29
+    100078: joint29 1
+    100080: joint3
+    100082: joint5
+    100084: joint6
+    100086: joint7
+    100088: joint8
+    100090: joint8 1
+    100092: joint9
+    100094: joint9 1
+    100096: leg_L
+    100098: leg_R
+    100100: //RootNode
+    100102: nucleus1
+    100104: pCube21
+    100106: pCube22
+    100108: pCube23
+    100110: pCube25
+    100112: rope
+    100114: spine
+    400000: arm_L
+    400002: arm_R
+    400004: body
+    400006: joint10
+    400008: joint10 1
+    400010: joint13
+    400012: joint13 1
+    400014: joint14
+    400016: joint14 1
+    400018: joint15
+    400020: joint15 1
+    400022: joint16
+    400024: joint16 1
+    400026: joint17
+    400028: joint17 1
+    400030: joint18
+    400032: joint18 1
+    400034: joint19
+    400036: joint19 1
+    400038: joint2
+    400040: joint20
+    400042: joint20 1
+    400044: joint21
+    400046: joint21 1
+    400048: joint22
+    400050: joint22 1
+    400052: joint23
+    400054: joint23 1
+    400056: joint24
+    400058: joint24 1
+    400060: joint25
+    400062: joint25 1
+    400064: joint26
+    400066: joint26 1
+    400068: joint27
+    400070: joint27 1
+    400072: joint28
+    400074: joint28 1
+    400076: joint29
+    400078: joint29 1
+    400080: joint3
+    400082: joint5
+    400084: joint6
+    400086: joint7
+    400088: joint8
+    400090: joint8 1
+    400092: joint9
+    400094: joint9 1
+    400096: leg_L
+    400098: leg_R
+    400100: //RootNode
+    400102: nucleus1
+    400104: pCube21
+    400106: pCube22
+    400108: pCube23
+    400110: pCube25
+    400112: rope
+    400114: spine
+    2300000: pCube21
+    2300002: pCube22
+    2300004: pCube23
+    2300006: pCube25
+    3300000: pCube21
+    3300002: pCube22
+    3300004: pCube23
+    3300006: pCube25
+    4300000: pCube21
+    4300002: body
+    4300004: pCube22
+    4300006: pCube23
+    4300008: pCube25
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
