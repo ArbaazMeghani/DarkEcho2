@@ -22,7 +22,7 @@ public class BigGate : MonoBehaviour {
 	}
 
 	private void OnTriggerExit(Collider other) {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && FindObjectOfType<GameManager>().isDoorOpen())
         {
             animationController.SetBool("GateOpen", false);
             AudioClips[1].Play();

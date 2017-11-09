@@ -15,6 +15,20 @@ public class GameManager : MonoBehaviour {
 
 	private bool gotKey;
 
+    void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.K))
+        {
+            Debug.Log("Cheat Key Activated");
+            gotKey = true;
+        }
+        if (Input.GetKey(KeyCode.L))
+        {
+            Debug.Log("Cheat Key Deactivated");
+            gotKey = false;
+        }
+    }
+
 	void Start() {
 		gotKey = false;
 	}
