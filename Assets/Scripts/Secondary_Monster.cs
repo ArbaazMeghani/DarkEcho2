@@ -22,13 +22,81 @@ using UnityEngine;
 *   the method of how the monsters kill the player or detect them/other sounds. 
 ************************************************************************************/
 public class Secondary_Monster : MonoBehaviour {
-    private GameObject rat;
+    public Transform target;
+    float speed = 1;
+    Vector3[] path;
+    int targetIndex;
+
+
     public GameObject waveProjector;
     public float waveDistanceMultiplier;
+    private float nextStep;
+
+    void Start()
+    {
+        PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+        waveDistanceMultiplier = 0.75f;
+    }
+    void FixedUpdate()
+    {
+        CreateWave();
+    }
+    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    {
+        if (pathSuccessful)
+        {
+            path = newPath;
+            StopCoroutine("FollowPath");
+            StartCoroutine("FollowPath");
+        }
+
+
+    }
+
+    IEnumerator FollowPath()
+    {
+        Vector3 currentWaypoint = path[0];
+
+        while (true)
+        {
+            if (transform.position == currentWaypoint)
+            {
+                targetIndex++;
+                if (targetIndex >= path.Length)
+                {
+                    yield break;
+                }
+                currentWaypoint = path[targetIndex];
+            }
+            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, speed);
+            yield return null;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            FindObjectOfType<GameManager>().Die();
+    }
+
+    void CreateWave()
+    {
+        GameObject wave = Instantiate(waveProjector,
+            new Vector3(gameObject.transform.position.x, 8.0f, gameObject.transform.position.z),
+            waveProjector.transform.rotation);
+
+        wave.GetComponent<ScannerMovement>().waveDistance = 20;
+
+       
+    }
+
+    /*
+   private GameObject rat;
+
     public float timer;
     private float speed;
     public Rigidbody rb;
-    private float nextStep;
+
     public float stepInterval = 0.5f;
     // Use this for initialization
     void Start()
@@ -70,16 +138,8 @@ public class Secondary_Monster : MonoBehaviour {
             nextStep = Time.time + stepInterval;
         }
     }
-    
-    /*
-
-    
-    
-    
-    
-    
     */
-    
+
     /*
     public float waveDistanceMultiplier;
     public GameObject waveProjector;

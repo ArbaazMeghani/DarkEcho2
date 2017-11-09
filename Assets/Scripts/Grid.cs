@@ -24,7 +24,7 @@ public class Grid : MonoBehaviour {
     public float nodeDiameter;
     int gridSizeX, gridSizeY;
 
-    void Start()
+    void Awake()
     {
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
@@ -109,7 +109,6 @@ public class Grid : MonoBehaviour {
                 {
                     
                     //  if(monsterNode == n)
-                    // {
                     //     Gizmos.color = Color.cyan;
                     // }
                     Gizmos.color = (n.walkable) ? Color.white : Color.red;
