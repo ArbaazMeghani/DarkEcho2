@@ -1,6 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*
+* Basic Implementation of the A* Algorithm borrowed from https://www.youtube.com/playlist?list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW
+* It is an A* pathfinding series by Sebastion Lague from youtube.
+*
+*
+*/
+
+
 
 public class Grid : MonoBehaviour {
 
@@ -11,6 +19,7 @@ public class Grid : MonoBehaviour {
     public float nodeRadius; //how much space will each node cover?
     public LayerMask unwalkableMask;
     Node[,] grid;
+    public bool displayGridGizmos;
 
     public float nodeDiameter;
     int gridSizeX, gridSizeY;
@@ -84,7 +93,7 @@ public class Grid : MonoBehaviour {
 
 
 
-    /*
+    
     void onDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(gridWorldSize.x, 1, gridWorldSize.y));
@@ -92,15 +101,21 @@ public class Grid : MonoBehaviour {
         if(grid != null)
         {
             //Node monsterNode = NodeFromWorldPoint(monster.position);
-            foreach (Node n in grid)
+            if (grid != null && displayGridGizmos)
             {
-              //  if(monsterNode == n)
-               // {
-               //     Gizmos.color = Color.cyan;
-               // }
-                Gizmos.color = (n.walkable) ? Color.white : Color.red;
-                Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .1f));
+
+
+                foreach (Node n in grid)
+                {
+                    
+                    //  if(monsterNode == n)
+                    // {
+                    //     Gizmos.color = Color.cyan;
+                    // }
+                    Gizmos.color = (n.walkable) ? Color.white : Color.red;
+                    Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .1f));
+                }
             }
         }
-    }*/
+    }
 }

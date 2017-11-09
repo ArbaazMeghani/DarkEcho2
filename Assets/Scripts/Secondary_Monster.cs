@@ -69,7 +69,18 @@ public class Secondary_Monster : MonoBehaviour {
             CreateWave();
             nextStep = Time.time + stepInterval;
         }
-    }/*
+    }
+    
+    /*
+
+    
+    
+    
+    
+    
+    */
+    
+    /*
     public float waveDistanceMultiplier;
     public GameObject waveProjector;
 

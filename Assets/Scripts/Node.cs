@@ -1,7 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+* Basic Implementation of the A* Algorithm borrowed from https://www.youtube.com/playlist?list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW
+* It is an A* pathfinding series by Sebastion Lague from youtube.
+*
+*
+*/
 public class Node
 {
     public bool walkable;
