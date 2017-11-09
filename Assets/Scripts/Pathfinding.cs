@@ -16,7 +16,7 @@ public class Pathfinding : MonoBehaviour {
     void Awake()
     {
         grid = GetComponent<Grid>();
-        requestManager = GetComponent<PathRequestManager>;
+        requestManager = GetComponent<PathRequestManager>();
     }
 
     public void StartFindPath(Vector3 startPos, Vector3 targetPos)
