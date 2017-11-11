@@ -15,7 +15,7 @@ public class Pause : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.M))
         {
-            (GameObject.Find("FirstPersonCharacter").GetComponent("MouseLock") as MonoBehaviour).enabled = false;
+            (GameObject.Find("Player").GetComponent("MouseLock") as MonoBehaviour).enabled = false;
             (GameObject.Find("Main Camera").GetComponent("MouseLock") as MonoBehaviour).enabled = false;
 
             pauseCanvas = GetComponent<Canvas>();
