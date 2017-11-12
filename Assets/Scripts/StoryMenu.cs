@@ -7,7 +7,7 @@ public class StoryMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
 
     public void MainMenu()

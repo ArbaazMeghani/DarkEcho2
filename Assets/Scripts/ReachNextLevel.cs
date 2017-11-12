@@ -10,7 +10,7 @@ public class ReachNextLevel : MonoBehaviour {
         Debug.Log("Stairs to Next Level Reached!");
         if (other.gameObject.CompareTag("Player"))
             {
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene(6);
             }
     }
     /*

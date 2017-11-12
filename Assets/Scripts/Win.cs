@@ -70,7 +70,7 @@ public class Win : MonoBehaviour {
 				light4.GetComponent<Light> ().enabled = true;
             }
 
-            if (timer > 5.1f)
+            if (timer > 8.1f)
             {
                 FindObjectOfType<GameManager>().EndGame();
             }
