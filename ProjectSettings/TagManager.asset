@@ -8,6 +8,7 @@ TagManager:
   - Debris
   - Monster
   - Scientist
+  - Hide
   layers:
   - Default
   - TransparentFX
