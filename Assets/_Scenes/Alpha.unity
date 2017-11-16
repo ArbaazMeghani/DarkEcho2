@@ -4933,7 +4933,7 @@ Prefab:
     - target: {fileID: 114144185548791892, guid: 4ce491067ec1bab4b9c350f405929eeb,
         type: 2}
       propertyPath: waypoints.Array.size
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4507189968631612, guid: 4ce491067ec1bab4b9c350f405929eeb, type: 2}
       propertyPath: m_LocalPosition.x
