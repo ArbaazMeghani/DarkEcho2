@@ -7,12 +7,12 @@ public class StoryMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("Alpha");
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Main Menu");
     }
 
 }

@@ -12,12 +12,12 @@ public class MainMenu : MonoBehaviour {
     }
     public void LastLevel()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene("Level.End");
     }
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("Alpha");
     }
 
     public void QuitGame()
@@ -26,26 +26,26 @@ public class MainMenu : MonoBehaviour {
     }
     public void LevelSelect()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("LevelSelect");
     }
 
     public void Credits()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Credits");
     }
 
     public void AboutUs()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("AboutUs");
     }
 
     public void Story()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Story");
     }
 
     public void ReturntoMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Main Menu");
     }
 }
