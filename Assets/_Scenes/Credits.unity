@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 1732413427}
   - component: {fileID: 1732413426}
   m_Layer: 5
-  m_Name: About Us
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,8 +483,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\t1. Unity/Unity Assets Store/Unity Standard Assets\n\t2. Character Assets:
-    https://drive.google.com/drive/folders/0B6zAm6skn5GYa0RrLUdWaW03UFE?usp=sharing_eil&ts=59e4f615\n\t3.
+  m_Text: "\t0. Yao Chen: Monster Character Model and some Environment Models\n\t1.
+    Unity/Unity Assets Store/Unity Standard Assets\n\t2. Character Assets: https://drive.google.com/drive/folders/0B6zAm6skn5GYa0RrLUdWaW03UFE?usp=sharing_eil&ts=59e4f615\n\t3.
     Wave Assets(Light Shader and Effects from Unity Assets): https://www.youtube.com/watch?v=-vrTsaLMHd0\n\t4.
     Office Assets: https://www.assetstore.unity3d.com/en/#!/content/53735\r\n\t5.
     Waste Bins: https://www.assetstore.unity3d.com/en/#!/content/73303\r\n\t6. Printer:
@@ -493,7 +493,10 @@ MonoBehaviour:
     Locked Door Sound: https://www.freesoundeffects.com/free-sounds/doors-10030/\n\t9.
     Pneumatic Door Sound: https://www.partnersinrhyme.com/soundfx/household_sounds/DOORPNUM_wav.shtml\n\t10.
     Rockslide Sound: http://soundbible.com/1987-Rockslide-Small.html\n\t11. A* Algorithm
-    Implementation by Sebastion Lague: https://www.youtube.com/playlist?list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW"
+    Implementation by Sebastion Lague: https://www.youtube.com/playlist?list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW\n\t12.
+    Billboard Facing Camera Code by Hayden Scott-Baron: http://wiki.unity3d.com/index.php?title=CameraFacingBillboard\n\t13.
+    Agent Character Model: \r\nhttps://free3d.com/3d-model/secret-service-agent-11026.html\n\t14.
+    Dr Cyrus Character Model: https://free3d.com/3d-model/dr-cyrus-52429.html"
 --- !u!222 &1732413427
 CanvasRenderer:
   m_ObjectHideFlags: 0
