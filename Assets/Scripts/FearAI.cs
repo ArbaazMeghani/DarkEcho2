@@ -86,10 +86,17 @@ public class FearAI : MonoBehaviour {
 
     void runToDoor(float timer)
     {
+
+        if (timer >= 16.0f)
+        {
+            gameObject.active = false;
+        }
+
         if (timer >= 5.0f)
         {
             des = door.position;
             navMesh.destination = des;
         }
+
     }
 }
