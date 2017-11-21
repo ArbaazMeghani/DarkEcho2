@@ -11,7 +11,7 @@ public class Trap : MonoBehaviour {
     public GameObject cinderDebris;
     public GameObject moreDebris;
     public Transform debrisSpawnLocation;
-    public float delay = 0.6f;
+    public float delay = 0.1f;
     private bool trigger = false;
     private float timer = 0f;
 

@@ -19,12 +19,15 @@ public class Win : MonoBehaviour {
     public Transform debrisSpawnWin3;
     public Transform debrisSpawnWin4;
 
+    //AudioSource audioSource;
+    public AudioSource[] AudioClips = null;
+
     private bool trigger = false;
     private float timer = 0f;
     // Use this for initialization
     void Start () {
-		
-	}
+        //audioSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -83,6 +86,9 @@ public class Win : MonoBehaviour {
         {
             Debug.Log("Win Button Pressed");
             trigger = true;
+            //audioSource.Play();
+            AudioClips[0].Play();
+            AudioClips[1].Play();
         }
        
     }

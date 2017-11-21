@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    AudioSource audioSource;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
