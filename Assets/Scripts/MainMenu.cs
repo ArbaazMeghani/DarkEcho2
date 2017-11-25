@@ -23,6 +23,10 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene("Alpha");
     }
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Level.Tutorial");
+    }
 
     public void QuitGame()
     {

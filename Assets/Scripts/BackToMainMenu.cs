@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReachNextLevel : MonoBehaviour {
+public class BackToMainMenu : MonoBehaviour
+{
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Stairs to Next Level Reached!");
+
         if (other.gameObject.CompareTag("Player"))
-            {
-                SceneManager.LoadScene("Level.End");
-            }
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
     /*
     public void QuitGame()
