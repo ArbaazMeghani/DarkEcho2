@@ -42,6 +42,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+		private MainMonsterMovement mainMonster;
 
         // Use this for initialization
         private void Start()
@@ -56,6 +57,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+
+			mainMonster = FindObjectOfType<MainMonsterMovement> ();
         }
 
 
@@ -180,9 +183,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 		private void CreateWave() {
-			Instantiate (scannerObject,
+			GameObject wave = Instantiate (scannerObject,
 				new Vector3 (gameObject.transform.position.x + transform.forward.x, 8.0f, gameObject.transform.position.z + transform.forward.z),
 				scannerObject.transform.rotation);
+
+			mainMonster.soundCreated (wave);
 		}
 
 		void OnCollisionEnter(Collision other) {
