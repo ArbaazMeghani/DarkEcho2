@@ -253,7 +253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 295, y: -209}
+  m_AnchoredPosition: {x: 158, y: -209}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276809331
@@ -396,8 +396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -67}
-  m_SizeDelta: {x: 700, y: 250}
+  m_AnchoredPosition: {x: 110, y: -166}
+  m_SizeDelta: {x: 500, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283495676
 MonoBehaviour:
@@ -431,31 +431,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Dark Echo 2 is a Vive controlled first person horror game. You have no
-    weapons to defeat the monsters with, all you have is the ability to see sound
-    waves, and the ability to grab and hold objects to throw them , make sounds, or
-    interact with other objects. Your ultimate goal is to find a way to escape. But
-    to do so you have to disengage the quarantine by restoring power to the building
-    and disabling the security system in the basement, the one place where you as
-    an intern have no authority to go....
+  m_Text: 'Vive Controls:
 
+    Touch pad to move
 
-    PC Controls:
+    Hold trigger to grab objects
 
-    WASD to move
-
-    Mouse Cursor Movement to look
-
-    Spacebar to jump
-
-    Cheats:
-
-    "K" to Obtain the Key if there is a locked door.
-
-    Mouse Click 1 to kill the Scientist
-
-
-    Vive Controls: ????????'
+    Release trigger to let go of objects or throw them'
 --- !u!222 &283495677
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -498,7 +480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -288, y: -209}
+  m_AnchoredPosition: {x: -158, y: -209}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &503649981
@@ -724,7 +706,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 39}
-  m_SizeDelta: {x: 700, y: 400}
+  m_SizeDelta: {x: 500, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763045188
 MonoBehaviour:
