@@ -4,6 +4,7 @@ public class BigGate : MonoBehaviour {
 
 	private Animator animationController;
     public AudioSource[] AudioClips = null;
+	public Canvas findKeyText;
    // AudioSource doorOpen;
    // AudioSource doorClose;
 
@@ -15,10 +16,12 @@ public class BigGate : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other) {
 		Debug.Log ("DOOR COLLISION!!");
-		if(other.gameObject.CompareTag("Player") && FindObjectOfType<GameManager>().isDoorOpen()){
+		if (other.gameObject.CompareTag ("Player") && FindObjectOfType<GameManager> ().isDoorOpen ()) {
 			animationController.SetBool ("GateOpen", true);
-            AudioClips[0].Play();
-        }
+			AudioClips [0].Play ();
+		} else if (other.gameObject.CompareTag ("Player")) {
+			findKeyText.enabled = true;
+		}
 	}
 
 	private void OnTriggerExit(Collider other) {
@@ -26,6 +29,8 @@ public class BigGate : MonoBehaviour {
         {
             animationController.SetBool("GateOpen", false);
             AudioClips[1].Play();
-        }
+		} else if (other.gameObject.CompareTag ("Player")) {
+			findKeyText.enabled = false;
+		}
     }
 }
